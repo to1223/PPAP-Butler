@@ -1,16 +1,5 @@
 ﻿Import-Module "$($PSScriptRoot)\Modules\PasswordGenerator" -Force
 
-#$Script:ErrorActionPreference = "Inquire"
-
-
-# 引数チェック
-# 階層を調べて、浅い場合は本とうに実行するかを確認した方がいいかもしれない
-# あるいは、フォルダサイズ
-
-# 空の場合
-# 
-
-
 # パスワード生成
 $password = (New-Password -Uniq -NoConfusingLetters -Length 8)
 
