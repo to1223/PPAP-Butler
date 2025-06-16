@@ -22,7 +22,6 @@ $text = @(
 ) -join "`n"
 $textFileName = "$($compressedFileName).ppap.txt"
 try {
-    # zipファイルは上書きされるみたいなので、これも上書きにしてもいいかも
     New-Item -Path $outputFolder -Name $textFileName -Value $text -ErrorAction Stop
 }
 catch {
