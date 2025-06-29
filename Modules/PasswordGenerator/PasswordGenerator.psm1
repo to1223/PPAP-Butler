@@ -1,4 +1,5 @@
 ﻿function New-Password {
+[CmdletBinding()]
 param(
     [switch]$Uniq,
     [switch]$NoConfusingLetters,
